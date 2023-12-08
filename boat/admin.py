@@ -10,7 +10,7 @@ class OwnerAdmin(admin.ModelAdmin):
 
 @admin.register(Boat)
 class BoatAdmin(admin.ModelAdmin):
-    list_display = ('name', 'year', 'owner',)
+    list_display = ('name', 'year', 'owner')
     list_filter = ('year', 'owner',)
 
 
