@@ -21,7 +21,7 @@ class Boat(models.Model):
 
     price = models.IntegerField(**NULLABLE, verbose_name='Цена')
 
-    owner = models.ForeignKey(Owner, on_delete=models.CASCADE, verbose_name='Владелец')
+    owner = models.ForeignKey(Owner, on_delete=models.CASCADE, **NULLABLE, verbose_name='Владелец')
 
     def __str__(self):
         return f'{self.name}'
